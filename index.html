@@ -1,131 +1,314 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Science ePortfolio | CS 499</title>
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        background-color: #f5f7fa;
-        color: #253247;
-        line-height: 1.8;
-        margin: 0;
-        padding: 50px 25px;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    h1, h2, p {
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h1 {
-        color: #183153;
-        font-size: 2.5rem;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    h1 + p {
-        text-align: center;
-        color: #68788d;
-        font-size: 1.1rem;
-        margin-bottom: 50px;
-    }
-
-    h2 {
-        color: #214b70;
-        font-size: 1.5rem;
-        border-bottom: 2px solid #d9e1ea;
-        padding-bottom: 10px;
-        margin-top: 45px;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 1rem;
-        margin-top: 0;
-        margin-bottom: 18px;
-    }
-
-    a {
-        color: #245d92;
-    }
-
-    a:hover {
-        color: #173d63;
-    }
-
-    @media (max-width: 600px) {
         body {
-            padding: 25px 18px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #253247;
+            line-height: 1.8;
+            margin: 0;
         }
 
-        h1 {
-            font-size: 2rem;
+        header {
+            background-color: #183153;
+            color: white;
+            text-align: center;
+            padding: 55px 20px 30px;
         }
-    }
-</style>
 
+        header h1 {
+            font-size: 2.4rem;
+            margin: 0;
+        }
+
+        header p {
+            color: #d5e0ed;
+            margin: 8px 0 0;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 25px;
+            margin-top: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #b8d7f0;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px 35px;
+            margin-bottom: 25px;
+            border: 1px solid #e2e7ee;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #214b70;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #d9e1ea;
+            padding-bottom: 12px;
+            margin-top: 0;
+            margin-bottom: 22px;
+        }
+
+        h3 {
+            color: #183153;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: #245d92;
+        }
+
+        a:hover {
+            color: #173d63;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            padding: 9px 16px;
+            border: 1px solid #c5d5e4;
+            border-radius: 5px;
+            background-color: #f0f5fa;
+            color: #214b70;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            background-color: #e1ecf6;
+        }
+
+        .note {
+            color: #68788d;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            color: #68788d;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 35px 18px 25px;
+            }
+
+            header h1 {
+                font-size: 1.9rem;
+            }
+
+            main {
+                padding: 0 15px;
+            }
+
+            section {
+                padding: 22px 20px;
+            }
+
+            nav {
+                gap: 10px 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Computer Science ePortfolio</h1>
-    <p>Southern New Hampshire University | CS 499</p>
-    
-    <nav aria-label="Portfolio navigation" style="max-width: 900px; margin: 0 auto 35px; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;">
-        <a href="#assessment">About Me</a>
-        <a href="#code-review">Code Review</a>
-        <a href="#engineering">Software Engineering</a>
-        <a href="#algorithms">Algorithms</a>
-        <a href="#databases">Databases</a>
-    </nav>
 
-     <h2 id="assessment">Professional Self-Assessment</h2>  
-    
-    <h2 id="code-review">Code Review</h2>  
-    
-    <p>
-        My code review examines the original Grazioso Salvare Animal
-        Shelter Dashboard and identifies planned improvements in
-        software engineering, algorithms, and databases.
-    </p>
-    
-    <p>
-        <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Code%20Review">
-            View Code Review Materials
-        </a>
-    </p>
-    
-    <h2 id="engineering">Enhancement One: Software Design and Engineering</h2>  <h2 id="algorithms">Enhancement Two: Algorithms and Data Structures</h2>  <h2 id="databases">Enhancement Three: Databases</h2>Professional Self-Assessment</h2>
-    
-    <p>Completing the Computer Science program at Southern New Hampshire University has changed how I approach software development. At first, I focused on making applications work and meeting functional requirements. As I progressed, I paid more attention to application structure, how components work together, and how changes affect them. Developing my ePortfolio gave me an opportunity to revisit an earlier project and apply what I've learned since creating it. It helped me recognize my strengths in problem-solving, software engineering, and database management.</p>
-    
-    <p>I also developed a better understanding of communication and collaboration in software development. Writing functional code is important, but other developers and stakeholders also need to understand what the application does and why certain decisions were made. In CS 465, I worked on Travlr Getaways, a full-stack application that used MongoDB, Express.js, Angular, and Node.js. The project required balancing customer and administrator needs while keeping the application functional. Creating design documents, diagrams, and API documentation helped me understand how technical information can be communicated to different audiences. Although much of my coursework was independent, clear documentation, consistent code, and understanding requirements prepared me to collaborate and maintain applications.</p>
-    
-    <p>Other courses introduced less familiar areas. In CS 360, I developed an Android weight-tracking application with user authentication and SMS functionality. This introduced additional considerations involving user information, permissions, and security. In CS 370, I worked with artificial intelligence and reinforcement learning, using algorithms to train an agent and evaluate its performance. These projects helped me understand that different problems require different approaches and that selecting a solution involves considering its functionality, efficiency, and limitations. I've also learned to pay more attention to potential vulnerabilities, input validation, and protecting sensitive information rather than treating security as something to address after development.</p>
-    
-    <p>My professional goals have also changed throughout the program. I originally planned to pursue a career in cloud software engineering, but starting my own sourdough bakery has made me more interested in using my technical skills to develop something of my own. One of my long-term goals is to create an educational application that helps people better understand sourdough baking. Running a business has given me a different perspective on how technology can solve practical problems, especially when existing resources don't fully meet someone's needs. Whether I pursue traditional software engineering or independent development, I want to create applications that are useful, reliable, and designed with the people using them in mind.</p>
-    
-    <p>For my capstone, I chose to enhance the Grazioso Salvare Animal Shelter Dashboard that I originally developed in CS 340. The application uses Python, Dash, and MongoDB to help identify animals suitable for rescue assignments. I selected this project because I liked its original purpose and saw opportunities to improve it. For the software design and engineering enhancement, I converted the application from a Jupyter Notebook into a standalone dashboard, reorganized the code into separate modules, and improved the interface and record management functionality. I incorporated staff authentication, input validation, and automated testing. These changes made the application easier to maintain and gave me more experience considering security and application structure during development.</p>
-    
-    <p>My second enhancement focused on algorithms and data structures. I implemented a weighted scoring system to evaluate rescue candidates based on their suitability for different assignments. Instead of simply filtering animals that met the requirements, the dashboard could rank the ten highest-scoring candidates. I also used a min-heap priority queue to improve efficiency and compared its performance against conventional sorting. For the database enhancement, I focused on improving how the application manages and retrieves information through indexing, query optimization, validation, and performance testing. These enhancements required me to consider computational costs, data integrity, and the trade-offs involved in choosing different solutions.</p>
-    
-    <p>Together, the three enhancements demonstrate how software engineering, algorithms, and databases contribute to the functionality of a single application. The code review, enhancement narratives, and completed project also show how I identified problems, planned improvements, tested my changes, and documented the results. Working on this portfolio has helped me become more confident in my ability to evaluate existing software and make meaningful improvements rather than starting over whenever something needs to change. More importantly, it demonstrates the skills I've developed throughout the program and how I can apply them to problems beyond the classroom.</p>
+    <!-- portfolio header -->
+    <header>
+        <h1>Computer Science ePortfolio</h1>
+        <p>Southern New Hampshire University | CS 499</p>
 
+        <nav aria-label="Portfolio navigation">
+            <a href="#assessment">About Me</a>
+            <a href="#code-review">Code Review</a>
+            <a href="#engineering">Software Engineering</a>
+            <a href="#algorithms">Algorithms</a>
+            <a href="#databases">Databases</a>
+            <a href="#original">Original Artifact</a>
+        </nav>
+    </header>
 
-     <h2 id="assessment">Professional Self-Assessment</h2>  <h2 id="code-review">Code Review</h2>  <h2 id="engineering">Enhancement One: Software Design and Engineering</h2>  <h2 id="algorithms">Enhancement Two: Algorithms and Data Structures</h2>  <h2 id="databases">Enhancement Three: Databases</h2>Code Review</h2>
+    <main>
 
-     <h2 id="assessment">Professional Self-Assessment</h2>  <h2 id="code-review">Code Review</h2>  <h2 id="engineering">Enhancement One: Software Design and Engineering</h2>  <h2 id="algorithms">Enhancement Two: Algorithms and Data Structures</h2>  <h2 id="databases">Enhancement Three: Databases</h2>Enhancement One: Software Design and Engineering</h2>
+        <!-- professional self-assessment -->
+        <section id="assessment">
+            <h2>Professional Self-Assessment</h2>
 
-     <h2 id="assessment">Professional Self-Assessment</h2>  <h2 id="code-review">Code Review</h2>  <h2 id="engineering">Enhancement One: Software Design and Engineering</h2>  <h2 id="algorithms">Enhancement Two: Algorithms and Data Structures</h2>  <h2 id="databases">Enhancement Three: Databases</h2>Enhancement Two: Algorithms and Data Structures</h2>
+            <p>Completing the Computer Science program at Southern New Hampshire University has changed how I approach software development. At first, I focused on making applications work and meeting functional requirements. As I progressed, I paid more attention to application structure, how components work together, and how changes affect them. Developing my ePortfolio gave me an opportunity to revisit an earlier project and apply what I've learned since creating it. It helped me recognize my strengths in problem-solving, software engineering, and database management.</p>
 
-     <h2 id="assessment">Professional Self-Assessment</h2>  <h2 id="code-review">Code Review</h2>  <h2 id="engineering">Enhancement One: Software Design and Engineering</h2>  <h2 id="algorithms">Enhancement Two: Algorithms and Data Structures</h2>  <h2 id="databases">Enhancement Three: Databases</h2>Enhancement Three: Databases</h2>
+            <p>I also developed a better understanding of communication and collaboration in software development. Writing functional code is important, but other developers and stakeholders also need to understand what the application does and why certain decisions were made. In CS 465, I worked on Travlr Getaways, a full-stack application that used MongoDB, Express.js, Angular, and Node.js. The project required balancing customer and administrator needs while keeping the application functional. Creating design documents, diagrams, and API documentation helped me understand how technical information can be communicated to different audiences. Although much of my coursework was independent, clear documentation, consistent code, and understanding requirements prepared me to collaborate and maintain applications.</p>
+
+            <p>Other courses introduced less familiar areas. In CS 360, I developed an Android weight-tracking application with user authentication and SMS functionality. This introduced additional considerations involving user information, permissions, and security. In CS 370, I worked with artificial intelligence and reinforcement learning, using algorithms to train an agent and evaluate its performance. These projects helped me understand that different problems require different approaches and that selecting a solution involves considering its functionality, efficiency, and limitations. I've also learned to pay more attention to potential vulnerabilities, input validation, and protecting sensitive information rather than treating security as something to address after development.</p>
+
+            <p>My professional goals have also changed throughout the program. I originally planned to pursue a career in cloud software engineering, but starting my own sourdough bakery has made me more interested in using my technical skills to develop something of my own. One of my long-term goals is to create an educational application that helps people better understand sourdough baking. Running a business has given me a different perspective on how technology can solve practical problems, especially when existing resources don't fully meet someone's needs. Whether I pursue traditional software engineering or independent development, I want to create applications that are useful, reliable, and designed with the people using them in mind.</p>
+
+            <p>For my capstone, I chose to enhance the Grazioso Salvare Animal Shelter Dashboard that I originally developed in CS 340. The application uses Python, Dash, and MongoDB to help identify animals suitable for rescue assignments. I selected this project because I liked its original purpose and saw opportunities to improve it. For the software design and engineering enhancement, I converted the application from a Jupyter Notebook into a standalone dashboard, reorganized the code into separate modules, and improved the interface and record management functionality. I incorporated staff authentication, input validation, and automated testing. These changes made the application easier to maintain and gave me more experience considering security and application structure during development.</p>
+
+            <p>My second enhancement focused on algorithms and data structures. I implemented a weighted scoring system to evaluate rescue candidates based on their suitability for different assignments. Instead of simply filtering animals that met the requirements, the dashboard could rank the ten highest-scoring candidates. I also used a min-heap priority queue to improve efficiency and compared its performance against conventional sorting. For the database enhancement, I focused on improving how the application manages and retrieves information through indexing, query optimization, validation, and performance testing. These enhancements required me to consider computational costs, data integrity, and the trade-offs involved in choosing different solutions.</p>
+
+            <p>Together, the three enhancements demonstrate how software engineering, algorithms, and databases contribute to the functionality of a single application. The code review, enhancement narratives, and completed project also show how I identified problems, planned improvements, tested my changes, and documented the results. Working on this portfolio has helped me become more confident in my ability to evaluate existing software and make meaningful improvements rather than starting over whenever something needs to change. More importantly, it demonstrates the skills I've developed throughout the program and how I can apply them to problems beyond the classroom.</p>
+        </section>
+
+        <!-- code review -->
+        <section id="code-review">
+            <h2>Code Review</h2>
+
+            <p>My code review examines the original Grazioso Salvare Animal Shelter Dashboard and identifies opportunities for improvement in software engineering, algorithms and data structures, and databases.</p>
+
+            <p>The review covers the original application's structure, functionality, limitations, and planned enhancements. Supporting materials include my presentation and code review transcript.</p>
+
+            <div class="links">
+                <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Code%20Review">
+                    View Code Review Materials
+                </a>
+            </div>
+
+            <p class="note">Code review video pending.</p>
+        </section>
+
+        <!-- software engineering enhancement -->
+        <section id="engineering">
+            <h2>Enhancement One: Software Design and Engineering</h2>
+
+            <p>This enhancement focuses on improving the structure, functionality, and maintainability of the Grazioso Salvare Animal Shelter Dashboard.</p>
+
+            <p>I converted the original Jupyter Notebook into a standalone Dash application and reorganized the code into separate modules. I also redesigned the dashboard interface and added functionality for managing animal records.</p>
+
+            <p>Additional improvements include staff authentication, input validation, and automated unit testing. These changes improved the application's organization and made it easier to maintain and expand.</p>
+
+            <div class="links">
+                <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Enhancement%201%20-%20Software%20Engineering">
+                    View Enhancement One Files
+                </a>
+            </div>
+        </section>
+
+        <!-- algorithms enhancement -->
+        <section id="algorithms">
+            <h2>Enhancement Two: Algorithms and Data Structures</h2>
+
+            <p>This enhancement focuses on improving how the dashboard evaluates and ranks animals for different rescue assignments.</p>
+
+            <p>I developed a weighted scoring algorithm that evaluates rescue candidates based on breed and age. The scoring system ranks animals according to their suitability for water rescue, mountain rescue, and disaster tracking assignments.</p>
+
+            <p>I also implemented a min-heap priority queue using Python's heapq module to identify the ten highest-scoring candidates. This approach reduced unnecessary sorting and improved efficiency when processing larger datasets.</p>
+
+            <div class="links">
+                <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Enhancement%202%20-%20Algorithms">
+                    View Enhancement Two Files
+                </a>
+            </div>
+        </section>
+
+        <!-- database enhancement -->
+        <section id="databases">
+            <h2>Enhancement Three: Databases</h2>
+
+            <p>This enhancement focuses on improving the efficiency, reliability, and security of database operations in the Grazioso Salvare Animal Shelter Dashboard.</p>
+
+            <p>I improved the MongoDB database functionality through indexing, query optimization, validation, and performance testing. These changes address the way the application retrieves, updates, and manages animal records.</p>
+
+            <p>I also compared indexed queries against collection scans to evaluate database performance. The supporting files include benchmark scripts, testing results, and documentation of the database improvements.</p>
+
+            <div class="links">
+                <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Enhancement%203%20-%20Databases">
+                    View Enhancement Three Files
+                </a>
+            </div>
+        </section>
+
+        <!-- original project -->
+        <section id="original">
+            <h2>Original Artifact</h2>
+
+            <p>The original Grazioso Salvare Animal Shelter Dashboard was developed in CS 340: Client/Server Development.</p>
+
+            <p>The project used Python, Dash, and MongoDB to display animal shelter records and filter candidates for rescue assignments. This original version serves as the foundation for the three enhancements completed during CS 499.</p>
+
+            <div class="links">
+                <a href="https://github.com/JenniferJSNHU/CS-499-ePortfolio-Repository/tree/main/Original%20Artifact">
+                    View Original Project
+                </a>
+            </div>
+        </section>
+
+        <!-- completed application -->
+        <section id="dashboard">
+            <h2>Completed Dashboard</h2>
+
+            <p>The completed Grazioso Salvare Animal Shelter Dashboard combines the software engineering, algorithm, and database enhancements into one application.</p>
+
+            <div class="links">
+                <a href="https://grazioso-salvare-dashboard.onrender.com"
+                   target="_blank" rel="noopener noreferrer">
+                    View Live Dashboard
+                </a>
+
+                <a href="https://github.com/JenniferJSNHU/Grazioso-Salvare-Dashboard"
+                   target="_blank" rel="noopener noreferrer">
+                    View Final Source Code
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>CS 499 Computer Science ePortfolio</p>
+        <p>Southern New Hampshire University</p>
+    </footer>
+
 </body>
 </html>
