@@ -71,7 +71,7 @@ enable_staff_auth(app.server)
 
 
 # load the existing logo directly from the project folder
-logo_path = Path(__file__).resolve().parent / "Grazioso Salvare Logo.png"
+logo_path = Path(__file__).resolve().parent / "assets" / "grazioso_salvare_logo.png"
 if logo_path.exists():
     encoded_logo = base64.b64encode(logo_path.read_bytes()).decode("ascii")
     sidebar_logo = html.Img(
