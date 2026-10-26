@@ -7,4 +7,4 @@ The review identifies planned improvements in software engineering, algorithms a
 
 ## Code Review Video
 
-The code review video will be added before the final portfolio submission.
+https://drive.google.com/file/d/1Zh4o4nz-HgCVRPnuqlJNRHzf_1v0DcMb/view?usp=sharing
