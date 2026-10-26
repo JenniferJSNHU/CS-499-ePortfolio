@@ -73,8 +73,8 @@ server = app.server
 enable_staff_auth(app.server)
 
 
-# embed the Grazioso Salvare logo in the sidebar if it exists in the assets folder
-logo_path = Path(__file__).resolve().parent / "assets" / "grazioso_salvare_logo.png"
+# embed the Grazioso Salvare logo in the sidebar
+logo_path = Path(__file__).resolve().parent / "Grazioso Salvare Logo.png"
 if logo_path.exists():
     encoded_logo = base64.b64encode(logo_path.read_bytes()).decode("ascii")
     sidebar_logo = html.Img(
